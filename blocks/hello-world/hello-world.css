@@ -1,0 +1,30 @@
+/* /blocks/hello-world/hello-world.css */
+.hello-world-wrapper {
+  /* Your baseline wrapper styles */
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+/* Base block */
+.hello-world {
+  padding: 0.5rem 0.75rem;
+  line-height: 1.2;
+}
+
+/* Options (set via hello-world (loud|subtle|red)) */
+.hello-world.loud {
+  letter-spacing: 0.08em;
+  text-shadow: 0 1px 0 rgba(0,0,0,.05);
+  border-bottom: 2px solid currentColor;
+}
+
+.hello-world.subtle {
+  text-transform: none;         /* override wrapper’s uppercase */
+  opacity: 0.3;
+  font-size: 0.9em;
+}
+
+.hello-world.red {
+  color: red;
+  border-radius: 6px;
+}
